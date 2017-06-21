@@ -7,7 +7,7 @@ ANSIBLE_METADATA = {'metadata_version': '1.0',
 
 DOCUMENTATION = r'''
 ---
-module: cloud_resources
+module: cloudforms_resources
 short_description: Create resources on ManageIQ
 description:
   - Create resources that can hold vms.
@@ -44,7 +44,7 @@ options:
 EXAMPLES = r'''
 # Create some cloud resource:
 - name: Create new Cloud Resource
-  cloud_resource:
+  cloudforms_resource:
     url: "{{ cloud_url }}"
     user: "{{ cloud_user }}"
     password: "{{ cloud_password }}"

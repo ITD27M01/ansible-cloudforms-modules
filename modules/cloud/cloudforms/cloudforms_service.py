@@ -7,7 +7,7 @@ ANSIBLE_METADATA = {'metadata_version': '1.0',
 
 DOCUMENTATION = r'''
 ---
-module: cloud_service
+module: cloudforms_service
 short_description: Create Service on ManageIQ
 description:
   - Create service that can hold vms. Service should be tagget by proper tags for user access.
@@ -43,7 +43,7 @@ options:
 
 EXAMPLES = r'''
 # Create new service for vms and register service parameters.
-cloud_service:
+cloudforms_service:
   name: "{{ service_name }}"
   state: present
   url: "{{ cloud_url }}"
@@ -53,7 +53,7 @@ cloud_service:
 register: service
 
 # Remove all services with name service_name
-cloud_service:
+cloudforms_service:
   name: "{{ service_name }}"
   state: absent
   url: "{{ cloud_url }}"
